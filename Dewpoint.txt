@@ -1,0 +1,7 @@
+model2 <- lm(Mean.TemperatureC~Mean.Humidity,Delhi)
+plot(model2)
+predict(model2)
+DewPredict <- predict(model2)
+Dew2016 <- mean(DewPredict[1:365])
+Dew2016
+DewPoint(Dew2016)

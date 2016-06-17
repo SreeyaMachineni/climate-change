@@ -1,0 +1,14 @@
+ modelfog<-lm((Mean.TemperatureC-MeanDew.PointC)~IST,ahmedabad)
+> plot(modelfog)
+Hit <Return> to see next plot: 
+Hit <Return> to see next plot: 
+Hit <Return> to see next plot: 
+Hit <Return> to see next plot: 
+> fogpredval <- predict(modelfog)
+> fogpredval2016 <- c(fogpredval[1:366])
+> fogpredpoten<-c(fogpredval2016<2.5)
+> fogpred01 <- data.frame(v1=fogpredpoten,v2=fogpredval2016,v3=ahmedabad$IST[1:366])
+> fogpred02 <- subset(fogpred01,fogpredpoten==TRUE)
+> fogmon<-c(as.numeric(format(as.Date(fogpred02$v3),'%m')))
+> fogdata<-data.frame(fvar1=fogpred02$v2,fvar2=fogmon)
+> fmean<-data.frame(aggregate(fogdata[,1],by=list(fogdata$fvar2),mean))
