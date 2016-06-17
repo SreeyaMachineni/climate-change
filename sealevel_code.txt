@@ -1,0 +1,10 @@
+luck<-c(format(as.Date(lucknow$IST),'%Y'))
+lucksea<-c(lucknow$Mean.Sea.Level.PressurehPa)
+luckpress<-data.frame(v1=luck,v2=lucksea)
+Gluckpress<-data.frame(aggregate(luckpress[,2],by=list(luckpress$v1),mean))
+
+ yrs<-Gluckpress$Group.1
+ mns<-Gluckpress$x
+ lucknowsealevel<-data.frame(yrs,mns)
+ luckgraph <-ggplot(lucknowsealevel,aes(yrs,mns))+geom_point()+xlab("Years")+ylab("Sealevel Pressure(hpa)")
+ luckgraph
