@@ -1,0 +1,7 @@
+meanCity<-c(mean(na.omit(as.numeric(Hyderabad$CloudCover))),mean(na.omit(as.numeric(Jaipur$CloudCover))),mean(na.omit(as.numeric(kolkata$CloudCover))),mean(na.omit(as.numeric(Delhi$CloudCover))),mean(na.omit(as.numeric(Bangalore$CloudCover))),mean(na.omit(as.numeric(Chennai$CloudCover))),mean(na.omit(as.numeric(nagpur$CloudCover))),mean(na.omit(as.numeric(Mumbai$CloudCover))),mean(na.omit(as.numeric(lucknow$CloudCover))))
+meanCity
+names <- c("hyderabad","jaipur","kolkata","delhi","bangalore","chennai","nagpur","mumbai","lucknow")
+ clouddata<-data.frame(name=names,means=meanCity)
+
+p <-ggplot(clouddata,aes(name,means))+geom_bar(stat = "identity", position = "stack", aes(fill = means))
+p+labs(title="variation of cloudcover in each city",x="city",y="cloud cover(oktas)")

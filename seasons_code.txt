@@ -1,0 +1,48 @@
+hmon<-c(as.numeric(format(as.Date(Hyderabad$IST),'%m')))
+hdata<-data.frame(hv1=hmon,hv2=Hyderabad$Mean.TemperatureC)
+hmean<-c(mean(na.omit(subset(hdata,dv1==01))$hv2),mean(na.omit(subset(hdata,hv1==02))$hv2),mean(na.omit(subset(hdata,hv1==03))$hv2),mean(na.omit(subset(hdata,hv1==04))$hv2),mean(na.omit(subset(hdata,hv1==05))$hv2),mean(na.omit(subset(hdata,hv1==06))$hv2),mean(na.omit(subset(hdata,hv1==07))$hv2),mean(na.omit(subset(hdata,hv1==08))$hv2),mean(na.omit(subset(hdata,hv1==09))$hv2),mean(na.omit(subset(hdata,hv1==10))$hv2),mean(na.omit(subset(hdata,hv1==11))$hv2),mean(na.omit(subset(hdata,hv1==12))$hv2))
+
+jmon<-c(as.numeric(format(as.Date(Jaipur$IST),'%m')))
+jdata<-data.frame(jv1=jmon,jv2=Jaipur$Mean.TemperatureC)
+jmean<-c(mean(na.omit(subset(jdata,jv1==01))$jv2),mean(na.omit(subset(jdata,jv1==02))$jv2),mean(na.omit(subset(jdata,jv1==03))$jv2),mean(na.omit(subset(jdata,jv1==04))$jv2),mean(na.omit(subset(jdata,jv1==05))$jv2),mean(na.omit(subset(jdata,jv1==06))$jv2),mean(na.omit(subset(jdata,jv1==07))$jv2),mean(na.omit(subset(jdata,jv1==08))$jv2),mean(na.omit(subset(jdata,jv1==09))$jv2),mean(na.omit(subset(jdata,jv1==10))$jv2),mean(na.omit(subset(jdata,jv1==11))$jv2),mean(na.omit(subset(jdata,jv1==12))$jv2))
+
+amon<-c(as.numeric(format(as.Date(Ahmedabad$IST),'%m')))
+adata<-data.frame(av1=amon,av2=Ahmedabad$Mean.TemperatureC)
+amean<-c(mean(na.omit(subset(adata,av1==01))$av2),mean(na.omit(subset(adata,av1==02))$av2),mean(na.omit(subset(adata,av1==03))$av2),mean(na.omit(subset(adata,av1==04))$av2),mean(na.omit(subset(adata,av1==05))$av2),mean(na.omit(subset(adata,av1==06))$av2),mean(na.omit(subset(adata,av1==07))$av2),mean(na.omit(subset(adata,av1==08))$av2),mean(na.omit(subset(adata,av1==09))$av2),mean(na.omit(subset(adata,av1==10))$av2),mean(na.omit(subset(adata,av1==11))$av2),mean(na.omit(subset(adata,av1==12))$av2))
+
+lmon<-c(as.numeric(format(as.Date(lucknow$IST),'%m')))
+ldata<-data.frame(lv1=lmon,lv2=lucknow$Mean.TemperatureC)
+lmean<-c(mean(na.omit(subset(adata,lv1==01))$lv2),mean(na.omit(subset(ldata,lv1==02))$lv2),mean(na.omit(subset(ldata,lv1==03))$lv2),mean(na.omit(subset(ldata,lv1==04))$lv2),mean(na.omit(subset(ldata,lv1==05))$lv2),mean(na.omit(subset(ldata,lv1==06))$lv2),mean(na.omit(subset(ldata,lv1==07))$lv2),mean(na.omit(subset(ldata,lv1==08))$lv2),mean(na.omit(subset(ldata,lv1==09))$lv2),mean(na.omit(subset(ldata,lv1==10))$lv2),mean(na.omit(subset(ldata,lv1==11))$lv2),mean(na.omit(subset(ldata,lv1==12))$lv2))
+
+mmon<-c(as.numeric(format(as.Date(Mumbai$IST),'%m')))
+mdata<-data.frame(mv1=mmon,mv2=Mumbai$Mean.TemperatureC)
+mmean<-c(mean(na.omit(subset(mdata,mv1==01))$mv2),mean(na.omit(subset(mdata,mv1==02))$mv2),mean(na.omit(subset(mdata,mv1==03))$mv2),mean(na.omit(subset(mdata,mv1==04))$mv2),mean(na.omit(subset(mdata,mv1==05))$mv2),mean(na.omit(subset(mdata,mv1==06))$mv2),mean(na.omit(subset(mdata,mv1==07))$mv2),mean(na.omit(subset(mdata,mv1==08))$mv2),mean(na.omit(subset(mdata,mv1==09))$mv2),mean(na.omit(subset(mdata,mv1==10))$m2),mean(na.omit(subset(mdata,mv1==11))$mv2),mean(na.omit(subset(mdata,mv1==12))$mv2))
+
+nmon<-c(as.numeric(format(as.Date(nagpur$IST),'%m')))
+ndata<-data.frame(nv1=nmon,nv2=nagpur$Mean.TemperatureC)
+nmean<-c(mean(na.omit(subset(ndata,nv1==01))$nv2),mean(na.omit(subset(ndata,nv1==02))$nv2),mean(na.omit(subset(ndata,nv1==03))$nv2),mean(na.omit(subset(ndata,nv1==04))$nv2),mean(na.omit(subset(ndata,nv1==05))$nv2),mean(na.omit(subset(ndata,nv1==06))$nv2),mean(na.omit(subset(ndata,nv1==07))$nv2),mean(na.omit(subset(ndata,nv1==08))$nv2),mean(na.omit(subset(ndata,nv1==09))$nv2),mean(na.omit(subset(ndata,nv1==10))$nv2),mean(na.omit(subset(ndata,nv1==11))$nv2),mean(na.omit(subset(ndata,nv1==12))$nv2))
+
+kmon<-c(as.numeric(format(as.Date(kolkata$IST),'%m')))
+kdata<-data.frame(kv1=kmon,kv2=kolkata$Mean.TemperatureC)
+kmean<-c(mean(na.omit(subset(kdata,kv1==01))$kv2),mean(na.omit(subset(kdata,kv1==02))$kv2),mean(na.omit(subset(kdata,kv1==03))$kv2),mean(na.omit(subset(kdata,kv1==04))$kv2),mean(na.omit(subset(kdata,kv1==05))$kv2),mean(na.omit(subset(kdata,kv1==06))$kv2),mean(na.omit(subset(kdata,kv1==07))$kv2),mean(na.omit(subset(kdata,kv1==08))$kv2),mean(na.omit(subset(kdata,kv1==09))$kv2),mean(na.omit(subset(kdata,kv1==10))$kv2),mean(na.omit(subset(kdata,kv1==11))$kv2),mean(na.omit(subset(kdata,kv1==12))$kv2))
+
+
+dmon<-c(as.numeric(format(as.Date(Delhi$IST),'%m')))
+ddata<-data.frame(dv1=dmon,dv2=Delhi$Mean.TemperatureC)
+dmean<-c(mean(na.omit(subset(ddata,dv1==01))$dv2),mean(na.omit(subset(ddata,dv1==02))$dv2),mean(na.omit(subset(ddata,dv1==03))$dv2),mean(na.omit(subset(ddata,dv1==04))$dv2),mean(na.omit(subset(ddata,dv1==05))$dv2),mean(na.omit(subset(ddata,dv1==06))$dv2),mean(na.omit(subset(ddata,dv1==07))$dv2),mean(na.omit(subset(ddata,dv1==08))$dv2),mean(na.omit(subset(ddata,dv1==09))$dv2),mean(na.omit(subset(ddata,dv1==10))$dv2),mean(na.omit(subset(ddata,dv1==11))$dv2),mean(na.omit(subset(ddata,dv1==12))$dv2))
+
+def.par<-par(no.readonly = TRUE)
+par(oma = c(0,0,3,0))
+par(mfcol=c(2,2))
+par(mar=c(5,4,4,2)+0.1)
+par(cex.axis=.7)
+colors <-c("#5D8AA8","#87A96B","#DE5D83","#FF9966","#89CFF0","#98777B","#A0785A","#00CC99")
+
+names(spring)<-c("Hyd","Luk","Jap","Mum","Nag","Del","Kol","ahm")
+names(fall)<-c("Hyd","Luk","Jap","Mum","Nag","Del","Kol","ahm")
+names(winter)<-c("Hyd","Luk","Jap","Mum","Nag","Del","Kol","ahm")
+names(summer)<-c("Hyd","Luk","Jap","Mum","Nag","Del","Kol","ahm")
+barplot(spring, main = "Mean Temperature in Spring", xlab = "Cities", ylab = "Mean Temperatures(Degree Celcius)", col = colors, space = 1)
+barplot(fall, main = "Mean Temperature in fall", xlab = "Cities", ylab = "Mean Temperatures(Degree Celcius)", col = colors, space = 1)
+barplot(winter, main = "Mean Temperature in winter", xlab = "Cities", ylab = "Mean Temperatures(Degree Celcius)", col = colors, space = 1)
+barplot(summer, main = "Mean Temperature in summer", xlab = "Cities", ylab = "Mean Temperatures(Degree Celcius)", col = colors, space = 1)
