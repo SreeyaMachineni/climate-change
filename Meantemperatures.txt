@@ -1,0 +1,1 @@
+barplot(MeanTemps, main = "Mean Temperatures of cities", xlab = "Cities", ylab = "Mean Temperatures(Degree Celcius)", col = colors, space = 1)
